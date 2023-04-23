@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta name ="viewport" content="width=device-width, intial-scale=1.0">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <title>University Website</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
 
         <section class="header">
             <nav>
                 <a href="index.html"><img src="image/logo.png"></a>
-                <div class="nav-links">
+                <div class="nav-links" id="navLinks">
+                  <i class="fa fa-times" onclick="hideMenu()"></i>
                     <ul>
                         <li><a href="">Home</a></li>
                         <li><a href="about.html">About</a></li>
@@ -19,6 +22,7 @@
                         <li><a href="">Contact</a></li>
                     </ul>
                 </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
             </nav>
 
             <div class="text-box">
@@ -38,21 +42,21 @@
             <div class ="row">
                 <div class = "course-col">
                     <h3>Intermediate</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Dicta fugit ullam error quibusdam? Ab iste adipisci quis exercitationem ullam molestias earum at sit,
                     dolorum repudiandae molestiae facilis excepturi a corrupti.</p>
                 </div>
 
                 <div class = "course-col">
                     <h3>Degree</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Dicta fugit ullam error quibusdam? Ab iste adipisci quis exercitationem ullam molestias earum at sit,
                     dolorum repudiandae molestiae facilis excepturi a corrupti.</p>
                 </div>
 
                 <div class = "course-col">
                     <h3>Post Graduation</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Dicta fugit ullam error quibusdam? Ab iste adipisci quis exercitationem ullam molestias earum at sit,
                     dolorum repudiandae molestiae facilis excepturi a corrupti.</p>
                 </div>
@@ -100,7 +104,7 @@
                 <div class="facilities-col">
                     <img src="image/library.png">
                     <h3>World Class Library</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, 
+                    <p>Lorem ipsum dolor sit amet consectetur,
                     adipisicing elit. Accusantium deleniti doloribus est excepturi eos vero perferendis. Animi dignissimos ratione quas,
                      voluptatibus saepe eligendi doloremque veniam mollitia nostrum tenetur perspiciatis eveniet.</p>
                 </div>
@@ -108,7 +112,7 @@
                 <div class="facilities-col">
                     <img src="image/basketball.png">
                     <h3>Largest Play Ground</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, 
+                    <p>Lorem ipsum dolor sit amet consectetur,
                     adipisicing elit. Accusantium deleniti doloribus est excepturi eos vero perferendis. Animi dignissimos ratione quas,
                      voluptatibus saepe eligendi doloremque veniam mollitia nostrum tenetur perspiciatis eveniet.</p>
                 </div>
@@ -116,7 +120,7 @@
                 <div class="facilities-col">
                     <img src="image/cafeteria.png">
                     <h3>Tasty and Healthy Food</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, 
+                    <p>Lorem ipsum dolor sit amet consectetur,
                     adipisicing elit. Accusantium deleniti doloribus est excepturi eos vero perferendis. Animi dignissimos ratione quas,
                      voluptatibus saepe eligendi doloremque veniam mollitia nostrum tenetur perspiciatis eveniet.</p>
                 </div>
@@ -163,12 +167,26 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
              Quod facere harum nobis quam animi debitis voluptatum architecto nam hic cupiditate impedit <br>
              odio dolorem saepe voluptates itaque officiis ea, quis in!</p>
-            
+
         </section>
 
 
 
 
+
+        <script>
+
+          var navLinks = document.getElementById("navLinks");
+
+          function showMenu(){
+            navLinks.style.right = "0";
+          }
+
+          function hideMenu(){
+            navLinks.style.right = "-200px";
+          }
+
+        </script>
 
 
     </body>
